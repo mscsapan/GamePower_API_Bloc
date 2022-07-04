@@ -12,9 +12,17 @@ class LoadedApi extends StatelessWidget {
     // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return ListView.builder(
       itemCount: api.length,
+      shrinkWrap: true,
+      physics: const BouncingScrollPhysics(),
       itemBuilder: (context, index) {
         final ApiData data = api[index];
         return CustomCard(api: data);
+        /* return ListTile(
+          leading: CircleAvatar(
+            backgroundImage: NetworkImage(data.image!),
+          ),
+          title: Text(data.title!),
+        );*/
       },
     );
   }
