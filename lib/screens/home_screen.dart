@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Gamer Power '), centerTitle: true),
+      //appBar: AppBar(title: const Text('Gamer Power '), centerTitle: true),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 2.0),
         child: BlocBuilder<ApiDataBloc, ApiDataState>(
