@@ -6,7 +6,8 @@ import 'package:gamer_power_api_bloc/screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive, overlays: []);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky,
+      overlays: [SystemUiOverlay.top]);
   runApp(
     MaterialApp(
       home: BlocProvider(
@@ -15,8 +16,11 @@ void main() async {
         child: const HomeScreen(),
       ),
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.black12,
-        brightness: Brightness.dark,
+        /*  scaffoldBackgroundColor: Colors.black12,
+        brightness: Brightness.dark,*/
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blueGrey,
+        ),
       ),
       debugShowCheckedModeBanner: false,
     ),

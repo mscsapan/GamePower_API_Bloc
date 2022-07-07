@@ -17,7 +17,7 @@ class CustomCard extends StatelessWidget {
         ),
       ),
       child: Card(
-        elevation: 6.0,
+        elevation: 10.0,
         // color: const Color(0xFF363940),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
