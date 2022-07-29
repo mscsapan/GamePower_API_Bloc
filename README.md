@@ -1,16 +1,6 @@
-# gamer_power_api_bloc
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a Simple GamePower Flutter Application.
+Technology which are used for this Application is:-
+- Futter as a Framework
+- BLoC Pattern as State Management
+- http as Network Calling
+- GamePower API for date
