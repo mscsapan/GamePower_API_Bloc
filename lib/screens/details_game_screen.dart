@@ -11,14 +11,10 @@ class DetailGameScreen extends StatelessWidget {
   final Color white = Colors.white;
   final SizedBox space = const SizedBox(height: 10.0);
 
-  void _launchUrl(BuildContext context, String url) async {
-    final Uri uri = Uri.parse(url);
-    if (await launchUrl(
-      uri,
-      webOnlyWindowName: 'self',
-      mode: LaunchMode.externalApplication,
-    )) {
-      await launchUrl(uri);
+  void _launchUrl(BuildContext context, String baseUrl) async {
+    final Uri url = Uri.parse(baseUrl);
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -33,7 +29,10 @@ class DetailGameScreen extends StatelessWidget {
     final _size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: const Color(0xFF121212),
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text('Game Details'),
+        backgroundColor: const Color(0xFF121212),
+      ),
       body: SafeArea(
         child: Container(
           height: _size.height,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:gamer_power_api_bloc/model/api_data_model.dart';
 import 'package:gamer_power_api_bloc/views/custom_card.dart';
 
@@ -17,12 +16,6 @@ class LoadedApi extends StatelessWidget {
       itemBuilder: (context, index) {
         final ApiData data = api[index];
         return CustomCard(api: data);
-        /* return ListTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(data.image!),
-          ),
-          title: Text(data.title!),
-        );*/
       },
     );
   }

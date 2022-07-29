@@ -15,13 +15,6 @@ void main() async {
             ApiDataBloc()..add(GetAllApiDataEvent()),
         child: const HomeScreen(),
       ),
-      theme: ThemeData(
-        /*  scaffoldBackgroundColor: Colors.black12,
-        brightness: Brightness.dark,*/
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.blueGrey,
-        ),
-      ),
       debugShowCheckedModeBanner: false,
     ),
   );
