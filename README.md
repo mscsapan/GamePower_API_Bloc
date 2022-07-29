@@ -3,4 +3,4 @@ Technology which are used for this Application is:-
 - Futter as a Framework
 - BLoC Pattern as State Management
 - http as Network Calling
-- GamePower API for date
+- GamePower API for data
